@@ -1,8 +1,18 @@
 import React from 'react'
+import SubContents from "./SubContents";
+import Advertisement from "./Advertisement";
 
 const Main = () => {
   return (
-    <div style={{margin:'20px', backgroundColor:'#e06666'}}></div>
+    <div className="main">
+        <div className='sub'>
+            <SubContents />
+            <SubContents />
+            <SubContents />
+        </div>
+        <Advertisement />
+          
+    </div>
   )
 }
 export default Main;

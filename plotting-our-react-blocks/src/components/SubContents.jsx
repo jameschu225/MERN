@@ -2,7 +2,7 @@ import React from 'react'
 
 const SubContents = () => {
   return (
-    <div style={{margin:'20px',backgroundColor:'#ffd966', width:'200px', height:'400px'}}></div>
+    <div className="subcontents"></div>
   )
 }
 export default SubContents;
