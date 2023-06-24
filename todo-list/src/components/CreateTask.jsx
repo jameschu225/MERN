@@ -1,11 +1,16 @@
 import React, {useState} from 'react'
 
 const CreateTask = (props) => {
-    const {newTaskList, setnewTaskList, modNewTaskList} = props;
+    const {newTaskList, setnewTaskList} = props;
     const [newTask,setnewTask] = useState("");
      const handleSubmit = (e) => {
         e.preventDefault()
-        setnewTaskList([...newTaskList, newTask])
+      const newTodoItem = {
+        item: newTask,
+        complete: false
+      }
+
+        setnewTaskList([...newTaskList, newTodoItem])
         // console.log( `newtask ${newTask}`)
         // console.log(`newTaskList ${newTaskList}`)
         setnewTask("")

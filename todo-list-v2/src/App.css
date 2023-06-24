@@ -36,23 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.btn {
-  background-color: blue;
-  color: white;
-}
-.taskitem {
-  display: flex;
-  flex-direction: row;
-  justify-content:center ;
-  margin: 20px;
-}
-.taskbtn {
-  background-color: black;
-  color: white;
-}
-.item{
-  color: red;
-}
-.styleitem {
-  text-decoration: line-through;
-}
